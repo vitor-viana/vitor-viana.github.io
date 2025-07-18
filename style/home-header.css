@@ -1,0 +1,218 @@
+header .flex-container {
+    align-items: center;
+    height: 100px;
+}
+
+header .flex-container #logo {
+    width: 20%;
+}
+
+header .flex-container #logo img {
+    width: 150px;
+}
+
+header .flex-container nav {
+    width: 80%;
+}
+
+#mobile-button {
+    display: none;
+}
+
+header .flex-container nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .flex-container nav ul li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+header .flex-container nav ul li .contato-a {
+    color: #3299CC;
+    border: solid 2px #3299CC;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+#home {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+#home .flex-container {
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    min-height: 600px;
+}
+
+#home .flex-container .titulo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#home .flex-container .titulo h1 {
+    font-size: 75px;
+    letter-spacing: 5px;
+}
+
+#home .flex-container .titulo h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+#home .flex-container .titulo p {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    margin-top: 8px;
+    max-width: 250px;
+}
+
+#home .flex-container .titulo p img {
+    width:30px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+#home .flex-container .titulo a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #3299CC;
+    color: #000;
+    padding: 20px 0;
+    width: 200px;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .3s;
+}
+
+#home .flex-container .titulo a:hover {
+    background-color: #000;
+    color: #3299CC;
+    box-shadow: 1px 3px 8px #3299CC;
+}
+
+#home .flex-container .imagem {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#home .flex-container .imagem img {
+    max-width: 300px;
+    border-radius: 1000px;
+}
+
+@media (max-width: 1100px) {
+    header .flex-container #logo {
+        width: 50%;
+        display: flex;
+        justify-content: left;
+        margin-left: 15px;
+    }
+
+    header .flex-container nav {
+        width: 50%;
+        display: flex;
+        justify-content: right;
+        margin-right: 15px;
+    }
+
+    #mobile-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-button .l1, .l2, .l3 {
+        background-color: #fff;
+        width: 30px;
+        height: 3px;
+        margin-bottom: 5px;
+    }
+
+    #mobile-button .l3 {
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+
+    #menu-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        top: 100px;
+        right: 0px;
+        transition: .5s;
+        z-index: 1000;
+        background-color: #2d2d2d;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .active #menu-ul {
+        visibility: visible;
+        height: 500px;
+    }
+
+    #home .flex-container {
+       flex-direction: column-reverse;
+    }
+    
+    #home .flex-container .titulo {
+        width: 100%;
+        align-items: center;
+    }
+    
+    #home .flex-container .titulo h1 {
+        font-size: 50px;
+    }
+    
+    #home .flex-container .titulo h2 {
+        font-size: 20px;
+    }
+
+    #home .flex-container .titulo p {
+        margin: 8px 15px 0 15px;
+    }
+    
+    #home .flex-container .imagem {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #home .flex-container .imagem img {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    #home .flex-container .titulo h1 {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+    
+    #home .flex-container .titulo h2 {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    #home .flex-container .imagem img {
+        width: 150px;
+    }
+
+    #home .flex-container .titulo a {
+        width: 150px;
+        padding: 15px 0;
+    }
+}

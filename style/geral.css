@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex-container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+body {
+    background-color: #131313;
+}
+
+.acessibilidade-img {
+    width: 30px;
+    margin-left: 5px;
+}

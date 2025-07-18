@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de projetos de desenvolvimento de software, criado por Vítor Viana, aluno do curso de Bacharelado em Sistemas de Informação pela UFF - Universidade Federal Fluminense.">
+    
+    <title>Portfólio Vítor Viana | Full-Stack Developer</title>
+    <link rel="icon" href="./img/favicon.png">
+       
+    <link rel="stylesheet" href="./style/contato.css">
+    <link rel="stylesheet" href="./style/sobre.css">
+    <link rel="stylesheet" href="./style/projeto.css">
+    <link rel="stylesheet" href="./style/geral.css">
+    <link rel="stylesheet" href="./style/habilidade.css">
+    <link rel="stylesheet" href="./style/home-header.css">
+    
+</head>
+<body>
+    <header>
+        <div class="flex-container">
+            <div id="logo"><img src="img/logo.png" alt="Descrição do logo do site: O logo contém o texto 2v ponto dev. O 2v está escrito em preto dentro de um quadrado com fundo azul. Fora deste quadrado, à direita, está escrito ponto dev em branco."></div>
+            <nav id="nav">
+                <div title="Menu" id="mobile-button" onclick="toggleMenu()">
+                    <div class="l1"></div>
+                    <div class="l2"></div>
+                    <div class="l3"></div>
+                </div>
+
+                <ul id="menu-ul">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#habilidade">Habilidades</a></li>
+                    <li><a href="#projeto">Projetos</a></li>
+                    <li><a href="#contato" class="contato-a">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="home">
+        <div class="flex-container">
+            <div class="titulo">
+                <h1>Vítor Viana</h1>
+                <h2>Full-Stack Developer</h2>
+                <p><img src="img/deficiencia-visual.png" alt="Desenho de boneco segurando uma bengala.">Este site possui recurços de acessibilidade e suporte a leitores de tela.</p>
+                <a href="#sobre">Saiba Mais</a>
+            </div>
+            <div class="imagem">
+                <img src="./img/eu.jpg" alt="Imagem de perfil do portfólio de Vítor Viana. O fundo é azul. Vítor é uma pessoa branca, está sorrindo, tem cabelos pretos curtos e ondulados, usa óculos de grau, possui barba curta e está vestindo uma camisa preta.">
+            </div>
+        </div>
+    </div>
+
+    <div id="habilidade">
+        <div class="flex-container">
+            <h2>HABILIDADES TÉCNICAS <img class="acessibilidade-img" src="img/olho.png" alt="Descrição visual da seção: Esta seção contém uma lista de itens, onde cada item é um quadrado preto com bordas finas e levemente arredondadas, de cor azul. Dentro de cada quadrado, há uma imagem que representa uma tecnologia específica. Ao passar o mouse sobre qualquer item, uma animação é ativada, fazendo o item flutuar verticalmente com um movimento de subida e descida."></h2>
+            
+            <ul>
+                <li><img src="./img/habilidades/html.png" alt="html"></li>
+                <li><img src="./img/habilidades/css.png" alt="css"></li>
+                <li><img src="./img/habilidades/js.png" alt="JavaScript"></li>
+                <li><img src="./img/habilidades/node.png" alt="Node js"></li>
+                <li><img src="./img/habilidades/react.png" alt="React js"></li>
+                <li><img src="./img/habilidades/python.png" alt="Python"></li>
+                <li><img src="./img/habilidades/flask.png" alt="Flask"></li>
+                <li><img src="./img/habilidades/django.png" alt="Django"></li>
+                <li><img src="./img/habilidades/fast-api.png" alt="Fast API"></li>
+                <li><img src="./img/habilidades/pyteste.png" alt="Pytest"></li>
+                <li><img src="./img/habilidades/pandas.png" alt="Pandas"></li>
+                <li><img src="./img/habilidades/sql.png" alt="SQL"></li>
+                <li><img src="./img/habilidades/postgresql.png" alt="Postgre SQL"></li>
+                <li><img src="./img/habilidades/sqlite.png" alt="SQLite"></li>
+                <li><img src="./img/habilidades/git.png" alt="Git"></li>
+                <li><img src="./img/habilidades/c.png" alt="C"></li>
+                <li><img src="./img/habilidades/java.png" alt="Java"></li>
+                <li><img src="./img/habilidades/figma.png" alt="Figma"></li>
+                <li><img src="./img/habilidades/word-press.png" alt="WordPress"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="projeto">
+        <div class="flex-container">
+            <h2>PROJETOS <img class="acessibilidade-img" src="img/olho.png" alt="Descrição visual da seção: Esta seção contém uma lista de itens, onde cada item é um retângulo preto com bordas finas e levemente arredondadas de cor azul. Dentro de cada retângulo, há quatro elementos: uma imagem que representa o projeto, um título com o nome do projeto, uma breve descrição do projeto, uma lista das tecnologias utilizadas para a criação do projeto e um botão azul que direciona para a página do projeto."></h2>
+            
+            <ul id="project-ul">
+                <li>
+                    <img src="./img/projeto/trabalho-redes.png" alt="Imagem do projeto. Descrição da imagem: Formulário HTML com um titulo Enviar E-mail. O formulário possui os seguintes campos: Para, Assunto e Corpo, e um botão escrito enviar.">
+                    <h3>Sistema de Envio de E-mails</h3>
+                    <p>Este projeto tem como finalidade o envio de e-mails através de um formulário HTML que faz uma requisição HTTP para uma aplicação web service responsável pelo envio de e-mails via SMTP. Este sistema foi dividido em dois módulos principais: o frontend, que é a aplicação cliente, e o backend, que é a aplicação servidor.</p>
+                    <p class="tecnologias-p"><b>Tecnologias:</b> Python • FastAPI • HTML • CSS</p>
+                    <a href="https://github.com/vitor-viana/Trabalho-Redes">Abrir Projeto</a>
+                </li>
+                <li>
+                    <img src="./img/projeto/ielp.gif" alt="Imagem do projeto. Descrição da imagem: GIF demonstrando a rolagem pelo site da IELP, exibindo cada uma das seções do site.">
+                    <h3>IELP Engenharia Elétrica</h3>
+                    <p>Site desenvolvido para a IELP Engenharia, uma empresa especializada em serviços de engenharia elétrica.</p>
+                    <p class="tecnologias-p"><b>Tecnologias:</b> WordPress • Elementor • Figma</p>
+                    <a href="https://ielpengenharia.com.br/">Abrir Projeto</a>
+                </li>
+                <li>
+                    <img src="./img/projeto/busca-cep.gif" alt="Imagem do projeto. Descrição da imagem: GIF - Tela do projeto com um desenho do globo terrestre girando. Logo abaixo, há um título com a frase (Bem-vindo ao busca CEP) e um campo de inserção de texto para que seja colocado o CEP.">
+                    <h3>Busca CEP</h3>
+                    <p>O Busca CEP retorna endereços através de ceps fornecidos. Para este projeto utilizei a API viacep.com.br/ws/"CEP"/json.</p>
+                    <p class="tecnologias-p"><b>Tecnologias:</b> JavaScript • React.js • CSS</p>
+                    <a href="https://github.com/vitor-viana/Busca-CEP">Abrir Projeto</a>
+                </li>
+                <li>
+                    <img src="./img/projeto/cjj.png" alt="Imagem do projeto. Descrição da imagem: Desenho de um boneco em formato de caju, usando um kimono de artes marciais azul e uma faixa preta.">
+                    <h3>Web App CJJ</h3>
+                    <p>Este projeto é um dos meus favoritos e foi um dos meus primeiros. Eu o desenvolvi para ajudar meus professores de Jiu-Jitsu. Quando o criei não tinha muita noção de como funcionava o processo de desenvolvimento de um sistema web. Trata-se de um sistema de gerenciamento de alunos que controla a presença e a ficha técnica, incluindo graduação, peso e todos os requisitos de um atleta.</p>
+                    <p class="tecnologias-p"><b>Tecnologias:</b> Python • Flask • SQLite • JavaScript • CSS • HTML</p>
+                    <a href="https://github.com/vitor-viana/Web-App-CJJ">Abrir Projeto</a>
+                </li>
+            </ul>
+            <ul style="display: none;" id="more-project-ul">
+                <li>
+                    <img src="./img/projeto/agenda.png" alt="">
+                    <h3>Agenda de anotações</h3>
+                    <p>Este projeto é uma agenda de anotações multe usuário, onde cada usuário pode criar sua conta e escrever suas notas com o titulo, a data e a descrição. E caso o usuário perca sua senha de acesso a possibilidade de redefini-la através do e-mail cadastrado.</p>
+                    <p class="tecnologias-p"><b>Tecnologias:</b> Python • Django • HTML • CSS</p>
+                    <a href="https://github.com/vitor-viana/Agenda">Abrir Projeto</a>
+                </li>
+                <li>
+                    <img src="./img/projeto/tabela-preços.gif" alt="">
+                    <h3>Tabela de Preços Interativa</h3>
+                    <p>Este sistema foi desenvolvido com o Python e o Django Framework, ele utiliza o Django Admin para gerenciar a listagem de produtos por categoria na pagina index do projeto.</p>
+                    <p class="tecnologias-p"><b>Tecnologias:</b> Python • Django • HTML • CSS</p>
+                    <a href="https://github.com/vitor-viana/Tabela-de-Precos-Interativa">Abrir Projeto</a>
+                </li>
+                <li>
+                    <img src="./img/projeto/snake.gif" alt="">
+                    <h3>snake</h3>
+                    <p>O objetivo do jogo é capturar o máximo de maçãs possíveis, sem colidir com a parede e com o próprio corpo do jogador. Quanto mais maçãs forem capturadas maior ficara o corpo do personagem. </p>
+                    <p class="tecnologias-p"><b>Tecnologias:</b> Python • Pygame</p>
+                    <a href="https://github.com/vitor-viana/Jogos">Abrir Projeto</a>
+                </li>
+                <li>
+                    <img src="./img/projeto/pong.gif" alt="">
+                    <h3>Pong</h3>
+                    <p>Uma replica personalizada do Pong. </p>
+                    <p class="tecnologias-p"><b>Tecnologias:</b> Python • Pygame</p>
+                    <a href="https://github.com/vitor-viana/Jogos">Abrir Projeto</a>
+                </li>
+                <li>
+                    <img src="./img/projeto/asteroide.gif" alt="">
+                    <h3>Asteroide</h3>
+                    <p>É um jogo de nave onde o objetivo, é destruir os asteróides antes deles atingirem a Terra ou baterem na nave.</p>
+                    <p class="tecnologias-p"><b>Tecnologias:</b> Python • Pygame</p>
+                    <a href="https://github.com/vitor-viana/Jogos">Abrir Projeto</a>
+                </li>
+                <li>
+                    <img src="./img/projeto/platformer.gif" alt="">
+                    <h3>Platformer</h3>
+                    <p>Este eu não finalizei, falta eu criar os adversários do personagem e aumentar o game map. Mas ele tem como objetivo se parecer um pouco com o jogo do Super Mario.</p>
+                    <p class="tecnologias-p"><b>Tecnologias:</b> Python • Pygame</p>
+                    <a href="https://github.com/vitor-viana/Jogos">Abrir Projeto</a>
+                </li>
+            </ul>
+            <button id="show-more-btn">Mostrar Mais</button>
+        </div>
+    </div>
+
+    <div id="sobre">
+        <div class="flex-container">
+            <h2>SOBRE</h2>
+            <p>
+                Olá, seja bem-vindo! Eu me chamo Vítor Viana e sou estudante de Sistemas de Informação na UFF🎓, curso que escolhi devido à minha enorme curiosidade pela tecnologia. Sempre tive interesse em descobrir como os aplicativos, sites e a internet funcionavam, e sempre tive o desejo de aprender a criar meus próprios sistemas. Para mim, é incrível ter uma ideia e poder torná-la realidade através da tecnologia. Além disso, sou uma pessoa que ama esportes e música. Sou lutador de jiu-jitsu, faixa roxa🥋, e sou instrumentista, adoro tocar bateria e fazer um barulho🎶😊.
+            </p>
+            <p>
+                Atualmente, trabalho de forma autônoma criando sites para empresas. Isso me ajudou bastante a aprimorar minhas habilidades no desenvolvimento front-end e no design de páginas da web. Quando consigo um cliente, a primeira coisa que faço é entender o negócio em que ele trabalha e conhecer seus concorrentes. Somente então começo a etapa de criação do site. Depois de compreender o negócio, começo a criar o design da página junto com o cliente, utilizando o Figma. Após a aprovação do design, passo para a etapa de desenvolvimento. Esta etapa pode variar de acordo com as tecnologias usadas. Dependendo do nível de complexidade do site, posso usar o WordPress ou criar o site utilizando JavaScript, junto com CSS e HTML.
+            </p>
+            <p>
+                É isso! Falei um pouco sobre mim e sobre o que faço de forma resumida. Espero que tenha gostado do meu site, ele é simples mas fiz com bastante carinho❤.
+            </p>
+            <p>
+                E se você chegou até aqui, agradeço sua atenção💪🙏!
+            </p>
+        </div>
+    </div>
+
+    <div id="contato">
+        <div class="flex-container">
+            <h2>CONTATOS <img class="acessibilidade-img" src="img/olho.png" alt="Descrição visual da seção: Esta seção contém uma lista de itens, onde cada item é um círculo preto com um contorno azul brilhante, dando a impressão de que o círculo tem uma luz ao seu redor. Dentro de cada círculo, há uma imagem que representa um meio de contato."></h2>
+            
+            <ul>
+                <li><a href="https://www.linkedin.com/in/vitorvianasilva/"><img src="img/contatos/linkedin.png" alt="Linkedin"></a></li>
+                <li><a href="https://github.com/Vitor-Viana"><img src="img/contatos/github.png" alt="GitHub"></a></li>
+                <li><a href="mailto:vitorviana@id.uff.br"><img src="img//contatos/gmail.png" alt="E-mail"></a></li>
+                <li><a href="https://wa.me/5521988242947"><img src="img/contatos/whatsapp.png" alt="Whatsapp"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="flex-container">
+            <p>© 2024 - Todos os direitos reservados.</p>
+            <p>Site desenvolvido por Vítor Viana🚀🥋</p>
+        </div>    
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

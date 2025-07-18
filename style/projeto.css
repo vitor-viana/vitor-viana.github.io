@@ -1,0 +1,107 @@
+#show-more-btn {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #2d2d2d;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    margin: 0 0 50px 0;
+    padding: 15px 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+
+#show-more-btn:hover {
+    background-color: #000;
+    box-shadow: 1px 3px 8px #3299CC;
+}
+
+#projeto .flex-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#projeto h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+#project-ul, #more-project-ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#projeto ul li {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    min-width: 350px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    margin: 30px 15px;
+    padding: 15px;
+    background-color: #000;
+    border: solid 1px #3299CC;
+}
+
+#projeto ul li img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+#projeto ul li h3 {
+    margin: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#projeto ul li p {
+    text-align: center;
+    font-size: 12px;
+}
+
+#projeto ul li .tecnologias-p {
+    margin-top: 10px;
+}
+
+#projeto ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    background-color: #3299CC;
+    padding: 20px 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+#projeto ul li a:hover {
+    background-color: #000;
+    box-shadow: 1px 3px 8px #3299CC;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    #projeto ul li {
+        width: 100%;
+        min-width: 100px;
+    }
+}
