@@ -3,21 +3,6 @@ function toggleMenu() {
     ul.classList.toggle('active');
 }
 
-const showMoreBtn = document.getElementById("show-more-btn");
-
-if (showMoreBtn) {
-    showMoreBtn.addEventListener("click", function() {
-        const moreContent = document.getElementById("more-project-ul");
-        if (moreContent.style.display === "none") {
-            moreContent.style.display = "flex";
-            showMoreBtn.textContent = "Mostrar Menos";
-        } else {
-            moreContent.style.display = "none";
-            showMoreBtn.textContent = "Mostrar Mais";
-        }
-    });
-}
-
 const modalButtons = document.querySelectorAll("[data-modal]");
 const modalCloseButtons = document.querySelectorAll("[data-close-modal]");
 const modals = document.querySelectorAll(".competencia-modal, .projeto-modal");
