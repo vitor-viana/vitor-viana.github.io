@@ -3,26 +3,22 @@ function toggleMenu() {
     ul.classList.toggle('active');
 }
 
-const showMoreBtn = document.getElementById("show-more-btn");
+document.getElementById("show-more-btn").addEventListener("click", function() {
+    var moreContent = document.getElementById("more-project-ul");
+    if (moreContent.style.display === "none") {
+        moreContent.style.display = "flex";
+        document.getElementById("show-more-btn").textContent = "Mostrar Menos";
+    } else {
+        moreContent.style.display = "none";
+        document.getElementById("show-more-btn").textContent = "Mostrar Mais";
+    }
+});
 
-if (showMoreBtn) {
-    showMoreBtn.addEventListener("click", function() {
-        const moreContent = document.getElementById("more-project-ul");
-        if (moreContent.style.display === "none") {
-            moreContent.style.display = "flex";
-            showMoreBtn.textContent = "Mostrar Menos";
-        } else {
-            moreContent.style.display = "none";
-            showMoreBtn.textContent = "Mostrar Mais";
-        }
-    });
-}
+const projectModalButtons = document.querySelectorAll("[data-modal]");
+const projectModals = document.querySelectorAll(".projeto-modal");
+const projectModalCloseButtons = document.querySelectorAll("[data-close-modal]");
 
-const modalButtons = document.querySelectorAll("[data-modal]");
-const modalCloseButtons = document.querySelectorAll("[data-close-modal]");
-const modals = document.querySelectorAll(".competencia-modal");
-
-function openModal(modalId) {
+function openProjectModal(modalId) {
     const modal = document.getElementById(modalId);
     if (!modal) {
         return;
@@ -33,42 +29,42 @@ function openModal(modalId) {
     document.body.classList.add("modal-open");
 }
 
-function closeModal(modal) {
+function closeProjectModal(modal) {
     modal.classList.remove("is-open");
     modal.setAttribute("aria-hidden", "true");
-    if (!document.querySelector(".competencia-modal.is-open")) {
+    if (!document.querySelector(".projeto-modal.is-open")) {
         document.body.classList.remove("modal-open");
     }
 }
 
-modalButtons.forEach((button) => {
+projectModalButtons.forEach((button) => {
     button.addEventListener("click", function() {
-        openModal(button.dataset.modal);
+        openProjectModal(button.dataset.modal);
     });
 });
 
-modalCloseButtons.forEach((button) => {
+projectModalCloseButtons.forEach((button) => {
     button.addEventListener("click", function() {
-        const modal = button.closest(".competencia-modal");
+        const modal = button.closest(".projeto-modal");
         if (modal) {
-            closeModal(modal);
+            closeProjectModal(modal);
         }
     });
 });
 
-modals.forEach((modal) => {
+projectModals.forEach((modal) => {
     modal.addEventListener("click", function(event) {
         if (event.target === modal) {
-            closeModal(modal);
+            closeProjectModal(modal);
         }
     });
 });
 
 document.addEventListener("keydown", function(event) {
     if (event.key === "Escape") {
-        const openModalElement = document.querySelector(".competencia-modal.is-open");
-        if (openModalElement) {
-            closeModal(openModalElement);
+        const openProjectModalElement = document.querySelector(".projeto-modal.is-open");
+        if (openProjectModalElement) {
+            closeProjectModal(openProjectModalElement);
         }
     }
 });
