@@ -15,38 +15,166 @@
     margin-bottom: 30px;
 }
 
-#habilidade ul {
-    list-style-type: none;
+.competencias-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.competencia-card {
+    background: linear-gradient(180deg, #151515 0%, #090909 100%);
+    border: 1px solid #3299CC;
+    border-radius: 18px;
+    padding: 22px;
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    min-height: 240px;
+}
+
+.competencia-card:hover,
+.competencia-card:focus-visible {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(50, 153, 204, 0.18);
+    border-color: #8cd3ff;
+    outline: none;
+}
+
+.competencia-card img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.competencia-card h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.competencia-card p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #d8d8d8;
+}
+
+.competencia-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.72);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 2000;
+}
+
+.competencia-modal.is-open {
+    display: flex;
+}
+
+.competencia-modal__dialog {
+    width: min(640px, 100%);
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #101010;
+    border: 1px solid #3299CC;
+    border-radius: 22px;
+    padding: 28px;
+    color: #fff;
+    position: relative;
+    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.45);
+}
+
+.competencia-modal__dialog h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.competencia-modal__dialog p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #d8d8d8;
+    margin-bottom: 18px;
+}
+
+.competencia-modal__dialog ul {
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 10px;
 }
 
-#habilidade ul li {
-    width: 10%;
-    min-width: 50px;
-    margin: 20px 10px;
-    padding: 30px;
-    background-color: #000;
-    border-radius: 15px;
-    border: solid 1px #3299CC;
-    display: flex;
-    align-items: center;
+.competencia-modal__dialog ul li {
+    border: 1px solid rgba(50, 153, 204, 0.7);
+    background: rgba(50, 153, 204, 0.12);
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
 
-#habilidade ul li:hover {
-    animation: downUp .8s alternate infinite linear;
+.competencia-modal__close {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #3299CC;
+    color: #000;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
 }
 
-@keyframes downUp {
-    from {
-        transform: translateY(0px);
-    } 
-    to {
-        transform: translateY(-10px);
+.competencia-modal__close:hover {
+    background: #8cd3ff;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .competencias-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .competencia-card {
+        min-height: auto;
     }
 }
 
-#habilidade ul li img {
-    width: 100%;
+@media (max-width: 600px) {
+    #habilidade h2 {
+        font-size: 18px;
+    }
+
+    .competencia-card {
+        padding: 18px;
+    }
+
+    .competencia-card h3 {
+        font-size: 18px;
+    }
+
+    .competencia-modal__dialog {
+        padding: 22px 18px;
+    }
+
+    .competencia-modal__dialog h3 {
+        font-size: 22px;
+        padding-right: 40px;
+    }
 }

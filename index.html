@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de projetos de desenvolvimento de software, criado por Vítor Viana, aluno do curso de Bacharelado em Sistemas de Informação pela UFF - Universidade Federal Fluminense.">
+    <meta name="description" content="Portfólio de Vítor Viana, desenvolvedor back-end PcD com experiência em Delphi, .NET, APIs REST, arquitetura de software e projetos acadêmicos na UFF.">
     
-    <title>Portfólio Vítor Viana | Full-Stack Developer</title>
+    <title>Vítor Viana | PcD | Desenvolvedor Back-end | Delphi | .NET</title>
     <link rel="icon" href="./img/favicon.png">
        
     <link rel="stylesheet" href="./style/contato.css">
@@ -29,7 +29,8 @@
 
                 <ul id="menu-ul">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#habilidade">Habilidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidade">Competências</a></li>
                     <li><a href="#projeto">Projetos</a></li>
                     <li><a href="#contato" class="contato-a">Contato</a></li>
                 </ul>
@@ -41,8 +42,8 @@
         <div class="flex-container">
             <div class="titulo">
                 <h1>Vítor Viana</h1>
-                <h2>Full-Stack Developer</h2>
-                <p><img src="img/deficiencia-visual.png" alt="Desenho de boneco segurando uma bengala.">Este site possui recurços de acessibilidade e suporte a leitores de tela.</p>
+                <h2>PcD | Desenvolvedor Back-end | Delphi | .NET</h2>
+                <p><img src="img/deficiencia-visual.png" alt="Desenho de boneco segurando uma bengala.">Este site foi pensado com foco em acessibilidade, navegação simples e suporte a leitores de tela.</p>
                 <a href="#sobre">Saiba Mais</a>
             </div>
             <div class="imagem">
@@ -53,28 +54,106 @@
 
     <div id="habilidade">
         <div class="flex-container">
-            <h2>HABILIDADES TÉCNICAS <img class="acessibilidade-img" src="img/olho.png" alt="Descrição visual da seção: Esta seção contém uma lista de itens, onde cada item é um quadrado preto com bordas finas e levemente arredondadas, de cor azul. Dentro de cada quadrado, há uma imagem que representa uma tecnologia específica. Ao passar o mouse sobre qualquer item, uma animação é ativada, fazendo o item flutuar verticalmente com um movimento de subida e descida."></h2>
-            
+            <h2>COMPETÊNCIAS <img class="acessibilidade-img" src="img/olho.png" alt="Descrição visual da seção: Esta seção apresenta cards de competências. Ao clicar em cada card, um modal mostra as habilidades, tecnologias, frameworks e linguagens relacionadas ao perfil de Vítor Viana."></h2>
+
+            <div class="competencias-grid">
+                <button class="competencia-card" type="button" data-modal="modal-arquitetura">
+                    <img src="./img/habilidades/git.png" alt="Ícone de arquitetura e boas práticas">
+                    <h3>Arquitetura e boas práticas</h3>
+                    <p>SOLID, Clean Architecture, Design Patterns e orientação a objetos.</p>
+                </button>
+
+                <button class="competencia-card" type="button" data-modal="modal-backend">
+                    <img src="./img/habilidades/node.png" alt="Ícone de back-end e APIs">
+                    <h3>Back-end e APIs</h3>
+                    <p>APIs REST, ASP.NET Core, Entity Framework e desenvolvimento colaborativo.</p>
+                </button>
+
+                <button class="competencia-card" type="button" data-modal="modal-dados">
+                    <img src="./img/habilidades/sql.png" alt="Ícone de banco de dados e estruturas">
+                    <h3>Dados e estruturas</h3>
+                    <p>Banco de dados, SQL, estruturas de dados e modelagem de informações.</p>
+                </button>
+
+                <button class="competencia-card" type="button" data-modal="modal-linguagens">
+                    <img src="./img/habilidades/python.png" alt="Ícone de linguagens e frameworks">
+                    <h3>Linguagens e frameworks</h3>
+                    <p>Delphi, .NET, Python, Java, Dart, Flutter e frameworks web.</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="competencia-modal" id="modal-arquitetura" aria-hidden="true">
+        <div class="competencia-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="titulo-arquitetura">
+            <button class="competencia-modal__close" type="button" data-close-modal aria-label="Fechar modal">×</button>
+            <h3 id="titulo-arquitetura">Arquitetura e boas práticas</h3>
+            <p>Estas são as competências que mais reforçam meu perfil para desenvolvimento de software com organização e escalabilidade.</p>
             <ul>
-                <li><img src="./img/habilidades/html.png" alt="html"></li>
-                <li><img src="./img/habilidades/css.png" alt="css"></li>
-                <li><img src="./img/habilidades/js.png" alt="JavaScript"></li>
-                <li><img src="./img/habilidades/node.png" alt="Node js"></li>
-                <li><img src="./img/habilidades/react.png" alt="React js"></li>
-                <li><img src="./img/habilidades/python.png" alt="Python"></li>
-                <li><img src="./img/habilidades/flask.png" alt="Flask"></li>
-                <li><img src="./img/habilidades/django.png" alt="Django"></li>
-                <li><img src="./img/habilidades/fast-api.png" alt="Fast API"></li>
-                <li><img src="./img/habilidades/pyteste.png" alt="Pytest"></li>
-                <li><img src="./img/habilidades/pandas.png" alt="Pandas"></li>
-                <li><img src="./img/habilidades/sql.png" alt="SQL"></li>
-                <li><img src="./img/habilidades/postgresql.png" alt="Postgre SQL"></li>
-                <li><img src="./img/habilidades/sqlite.png" alt="SQLite"></li>
-                <li><img src="./img/habilidades/git.png" alt="Git"></li>
-                <li><img src="./img/habilidades/c.png" alt="C"></li>
-                <li><img src="./img/habilidades/java.png" alt="Java"></li>
-                <li><img src="./img/habilidades/figma.png" alt="Figma"></li>
-                <li><img src="./img/habilidades/word-press.png" alt="WordPress"></li>
+                <li>SOLID</li>
+                <li>Clean Architecture</li>
+                <li>Design Patterns</li>
+                <li>Orientação a objetos</li>
+                <li>DDD</li>
+                <li>Metodologias ágeis</li>
+                <li>Kanban</li>
+                <li>Git e versionamento</li>
+                <li>Testes unitários</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="competencia-modal" id="modal-backend" aria-hidden="true">
+        <div class="competencia-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="titulo-backend">
+            <button class="competencia-modal__close" type="button" data-close-modal aria-label="Fechar modal">×</button>
+            <h3 id="titulo-backend">Back-end e APIs</h3>
+            <p>Foco em construção de serviços, integração entre sistemas e estruturação de camadas de negócio.</p>
+            <ul>
+                <li>APIs REST</li>
+                <li>ASP.NET Core</li>
+                <li>Entity Framework</li>
+                <li>Firebase</li>
+                <li>Serviços web</li>
+                <li>Integração entre sistemas</li>
+                <li>Arquitetura em camadas</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="competencia-modal" id="modal-dados" aria-hidden="true">
+        <div class="competencia-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="titulo-dados">
+            <button class="competencia-modal__close" type="button" data-close-modal aria-label="Fechar modal">×</button>
+            <h3 id="titulo-dados">Dados e estruturas</h3>
+            <p>Base sólida para análise, persistência e organização de dados em aplicações back-end.</p>
+            <ul>
+                <li>Banco de dados</li>
+                <li>SQL</li>
+                <li>SQL Server</li>
+                <li>PostgreSQL</li>
+                <li>SQLite</li>
+                <li>Estruturas de dados</li>
+                <li>Modelagem de dados</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="competencia-modal" id="modal-linguagens" aria-hidden="true">
+        <div class="competencia-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="titulo-linguagens">
+            <button class="competencia-modal__close" type="button" data-close-modal aria-label="Fechar modal">×</button>
+            <h3 id="titulo-linguagens">Linguagens e frameworks</h3>
+            <p>Linguagens e tecnologias que aparecem com mais força na minha trajetória acadêmica e profissional.</p>
+            <ul>
+                <li>Delphi</li>
+                <li>.NET</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>Dart</li>
+                <li>Flutter</li>
+                <li>Flask</li>
+                <li>Django</li>
+                <li>FastAPI</li>
+                <li>React</li>
             </ul>
         </div>
     </div>
@@ -165,16 +244,18 @@
         <div class="flex-container">
             <h2>SOBRE</h2>
             <p>
-                Olá, seja bem-vindo! Eu me chamo Vítor Viana e sou estudante de Sistemas de Informação na UFF🎓, curso que escolhi devido à minha enorme curiosidade pela tecnologia. Sempre tive interesse em descobrir como os aplicativos, sites e a internet funcionavam, e sempre tive o desejo de aprender a criar meus próprios sistemas. Para mim, é incrível ter uma ideia e poder torná-la realidade através da tecnologia. Além disso, sou uma pessoa que ama esportes e música. Sou lutador de jiu-jitsu, faixa roxa🥋, e sou instrumentista, adoro tocar bateria e fazer um barulho🎶😊.
+                Olá, seja bem-vindo! Eu me chamo Vítor Viana, sou PcD com baixa visão em ambos os olhos e desenvolvedor back-end com foco em engenharia de software, arquitetura e boas práticas de desenvolvimento.
+                Atualmente, curso Sistemas de Informação na Universidade Federal Fluminense (UFF) e tenho interesse em construir software com organização, escalabilidade e legibilidade.
             </p>
             <p>
-                Atualmente, trabalho de forma autônoma criando sites para empresas. Isso me ajudou bastante a aprimorar minhas habilidades no desenvolvimento front-end e no design de páginas da web. Quando consigo um cliente, a primeira coisa que faço é entender o negócio em que ele trabalha e conhecer seus concorrentes. Somente então começo a etapa de criação do site. Depois de compreender o negócio, começo a criar o design da página junto com o cliente, utilizando o Figma. Após a aprovação do design, passo para a etapa de desenvolvimento. Esta etapa pode variar de acordo com as tecnologias usadas. Dependendo do nível de complexidade do site, posso usar o WordPress ou criar o site utilizando JavaScript, junto com CSS e HTML.
+                Tenho experiência em projetos acadêmicos e colaborativos, atuando com desenvolvimento em equipe, APIs REST, orientação a objetos, SOLID, Clean Architecture, Git, Kanban e bancos de dados.
+                No meu percurso profissional e acadêmico, tive contato com Delphi, .NET, ASP.NET Core, Flutter, Firebase, SQL Server e outras tecnologias que me ajudaram a evoluir tanto na implementação quanto na estruturação de sistemas.
             </p>
             <p>
-                É isso! Falei um pouco sobre mim e sobre o que faço de forma resumida. Espero que tenha gostado do meu site, ele é simples mas fiz com bastante carinho❤.
+                Também valorizo acessibilidade e procuro criar soluções que sejam úteis para diferentes perfis de usuários, sempre com atenção à usabilidade e à clareza da experiência.
             </p>
             <p>
-                E se você chegou até aqui, agradeço sua atenção💪🙏!
+                Se você chegou até aqui, agradeço sua atenção e fico à disposição para trocar ideias sobre tecnologia, carreira e desenvolvimento de software.
             </p>
         </div>
     </div>
@@ -194,7 +275,7 @@
 
     <footer>
         <div class="flex-container">
-            <p>© 2024 - Todos os direitos reservados.</p>
+            <p>© 2026 - Todos os direitos reservados.</p>
             <p>Site desenvolvido por Vítor Viana🚀🥋</p>
         </div>    
     </footer>
